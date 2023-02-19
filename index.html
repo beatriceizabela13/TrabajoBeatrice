@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="formulario">
+        <div class="cabecera">
+            <h4>Create Account</h4>
+        </div>
+        <form id="formulario" action="formulario.php" method="Get">
+
+        <div class="form-control">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-input" id="nombre" name="Nombre" required />
+            <img src="error-icon.svg" alt="error-icon" class="img-error" height="15px" width="15px" />
+            <img src="success-icon.svg" alt="success-icon" class="img-success" height="15px" width="15px" />
+            <small>Rellene este campo</small>
+        </div>
+
+        <div class="form-control">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-input" id="email" name="Email" required />
+            <img src="error-icon.svg" alt="error-icon" class="img-error" height="15px" width="15px" />
+            <img src="success-icon.svg" alt="success-icon" class="img-success" height="15px" width="15px" />
+            <small>Rellene este campo</small>
+        </div>
+
+        <div class="form-control">
+            <label for="pass" class="form-label">Clave</label>
+            <input type="password" class="form-input" id="pass" name="pass" minlength="8" required />
+            <img src="error-icon.svg" alt="error-icon" class="img-error" height="15px" width="15px" />
+            <img src="success-icon.svg" alt="success-icon" class="img-success" height="15px" width="15px" />
+            <small>Rellene este campo</small>
+        </div>
+
+        <div class="form-control">
+            <label for="passConfirma" class="form-label">Confirme su clave</label>
+            <input type="password" class="form-input" id="passconfirma" name="passconfirma" minlength="8" required />
+            <img src="error-icon.svg" alt="error-icon" class="img-error" height="15px" width="15px" />
+            <img src="success-icon.svg" alt="success-icon" class="img-success" height="15px" width="15px" />
+            <small>Rellene este campo</small>
+        </div>
+
+        <input class="button" type="submit" value="ENVIAR" id="submit">
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
